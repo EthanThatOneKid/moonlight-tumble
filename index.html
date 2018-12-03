@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Moonlight Tumble</title>
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="http://ethandavidson.com/l/img/ethan-logo.gif">
+
+<script src="libraries/p5.js"></script>
+<script src="libraries/p5.dom.js"></script>
+<script src="libraries/p5.sound.js"></script>
+<script src="libraries/p5.gif.min.js"></script>
+<script src="libraries/matter.min.js"></script>
+<script src="sketches/sketch.js"></script>
+<script src="sketches/rect.js"></script>
+<script src="sketches/user.js"></script>
+<script src="sketches/slingshot.js"></script>
+<script src="sketches/obstacle.js"></script>
+<script src="sketches/kill.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "x",
+    authDomain: "moonlight-tumble.firebaseapp.com",
+    databaseURL: "https://moonlight-tumble.firebaseio.com",
+    projectId: "moonlight-tumble",
+    storageBucket: "",
+    messagingSenderId: "x"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Josefin+Sans');
+table {
+	background-color: white;
+}
+td {
+	border: 1px solid;
+}
+#title {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 200%;
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body {
+	height: 100%;
+  overflow: hidden;
+}
+</style>
+
+<body>
+<iframe id="song" width='640' height='360' style="display:none;" src='https://www.youtube.com/embed/DI87rVA44aY?autoplay=1&loop=1' frameborder='0' frameborder='0' allowfullscreen></iframe>
+<table align='center' style="margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+<tr><td colspan='3'>
+<h1 id='title' align='center'>Moonlight Tumble</h1>
+</td></tr><tr>
+
+<td align='center'>
+<h2 id='name-container'></h2>
+<h3 id='moons-display'></h3>
+<p id='strokes'></p>
+<button onclick='(function(){location.reload();})()'>reload</button>
+<br>
+<button onclick='(function(){if(user){killScreen(user.moons,initialStrokes);}})()'>end tumble</button>
+</td>
+
+<td align='center'>
+<div id='button-container'></div>
+<div id='canvas-container'></div>
+</td>
+
+<td>
+<div id='leaderboard-container'></div>
+</td>
+
+</table>
+</body>
+
+</html>
