@@ -36,9 +36,12 @@ These include a wrapping/scrolling background and a character.
 
 ---
 
+[![Buy me a Coffee](https://img.shields.io/badge/buy%20me%20a-coffee-%23FF813F)][bmac]
+
 Developed with [🌝][play] by [EthanThatOneKid][creator]
 
 [creator]: http://ethandavidson.com/
+[bmac]: http://buymeacoff.ee/etok
 [play]: http://tumble.ethandavidson.com/
 [tumbleweed_img]: assets/tumbleweed.png
 [sun_img]: assets/sun.png
