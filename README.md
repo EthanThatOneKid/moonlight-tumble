@@ -22,14 +22,16 @@ Moonlight Tumble encourages the rare combination of existential thought and merr
 I created many custom assets for this game because I was in a graphic design class at the time in my junior year of high school.
 These include a wrapping/scrolling background and a character.
 
+> [`assets/tumbleweed.png`][tumbleweed_img]
 
-> [`Tumbleweed`][tumbleweed_img]
 [![Tumbleweed][tumbleweed_img]][tumbleweed_img]
 
-> [`Sun`][sun_img]
+> [`assets/sun.png`][sun_img]
+
 [![Sun][sun_img]][sun_img]
 
-> [`Moon`][moon_img]
+> [`assets/moon.png`][moon_img]
+
 [![Moon][moon_img]][moon_img]
 
 ---
